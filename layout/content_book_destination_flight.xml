@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.bulletinflights.BookDestinationFlight"
+    tools:showIn="@layout/activity_book_destination_flight">
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+       <!-- <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Find Starting Location"
+            android:id="@+id/scheduleStartingLocation"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentLeft="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Start: Not Specified"
+            android:id="@+id/displayStartLocation"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/scheduleStartingLocation"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Find Ending Location"
+            android:id="@+id/scheduleEndingLocation"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/displayStartLocation"
+            android:layout_marginTop="15dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="End: Not Specified"
+            android:id="@+id/DisplayEndLocation"
+            android:layout_below="@+id/scheduleEndingLocation"
+            android:layout_marginTop="15dp"/>
+-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Pick Starting Location"
+            android:id="@+id/displayStartLocationOption"
+            android:layout_marginTop="15dp"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:ems="10"
+            android:id="@+id/startLocationPicker"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/displayStartLocationOption"
+            android:layout_marginTop="15dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Pick Ending Location"
+            android:id="@+id/displayEndLocationOption"
+            android:layout_below="@+id/startLocationPicker"
+            android:layout_marginTop="15dp"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:ems="10"
+            android:id="@+id/endLocationPicker"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/displayEndLocationOption"
+            android:layout_marginTop="15dp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Pick Date"
+            android:id="@+id/DisplayDateOption"
+            android:layout_below="@+id/endLocationPicker"
+            android:layout_marginTop="15dp"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="date"
+            android:ems="10"
+            android:id="@+id/datePicker"
+            android:layout_alignParentBottom="true"
+            android:layout_alignRight="@+id/scheduleStartingLocation"
+            android:layout_alignEnd="@+id/scheduleStartingLocation"
+            android:layout_below="@+id/DisplayDateOption"
+            android:layout_marginTop="15dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Pick Date"
+            android:id="@+id/DisplayTimeOption"
+            android:layout_below="@+id/datePicker"
+            android:layout_marginTop="15dp"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="date"
+            android:ems="10"
+            android:id="@+id/timePicker"
+            android:layout_alignParentBottom="true"
+            android:layout_alignRight="@+id/scheduleStartingLocation"
+            android:layout_alignEnd="@+id/scheduleStartingLocation"
+            android:layout_below="@+id/DisplayTimeOption"
+            android:layout_marginTop="15dp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Post Flight"
+            android:id="@+id/registerFlight"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/timePicker" />
+
+    </RelativeLayout>
+</android.support.v4.widget.NestedScrollView>
